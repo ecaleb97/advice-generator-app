@@ -1,4 +1,5 @@
 import { useAdvice } from "../hooks/useAdvice";
+import "../components/Advice.css";
 
 export function Advice() {
   const { advice, id, refreshAdvice } = useAdvice();
@@ -18,7 +19,9 @@ export function Advice() {
         <svg className="my-[1.5rem]" width="295" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fillRule="evenodd"><path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z"/><g transform="translate(138)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg>
       </div>
       <button 
-        className="bg-[#52ffa8] p-4 rounded-full absolute -bottom-[1.5rem] left-1/2 transform -translate-x-1/2 transition-all hover:scale-110" 
+        className="bg-[#52ffa8] p-4 rounded-full absolute 
+        -bottom-[1.5rem] left-1/2 transform -translate-x-1/2 
+        transition-all hover:scale-110 button-shadow" 
         onClick={handleClick}
       >
         <div>
